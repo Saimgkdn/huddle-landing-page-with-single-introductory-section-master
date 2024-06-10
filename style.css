@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  font-weight: 400;
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin: 40px auto 60px auto;
+}
+
+.hero {
+  display: flex;
+}
+
+.image {
+  width: 55%;
+}
+
+.image img {
+  width: 90%;
+}
+
+.info {
+  width: 44%;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 28px;
+  color: #fff;
+  margin-top: 40px;
+  width: 90%;
+}
+
+p {
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.info a:link,
+.info a:visited {
+  color: hsl(257, 40%, 49%);
+  text-decoration: none;
+  background-color: #fff;
+  padding: 15px 80px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.info a:hover,
+.info a:active {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.icon {
+  width: 50px;
+  fill: #fff;
+  margin-left: 20px;
+}
+
+.social {
+  text-align: right;
+  filter: invert(1);
+}
+
+.icon {
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.social a:hover,
+.social a:active {
+  color: hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+  }
+  .container {
+    max-width: 100%;
+    margin: 32px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .social {
+    text-align: center;
+  }
+}
